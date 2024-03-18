@@ -21,8 +21,8 @@ nav {
     justify-content: space-between;
     height: auto;
     width: 150px;
-    right: 250px;
-    top: 50px;
+    right: calc(100vw/9);
+    top: calc(100vh/22);
 }
 
 #logoLinkedin {
@@ -37,8 +37,8 @@ nav {
 
 .aboutMe {
     position: absolute;
-    top: 500px;
-    left: 300px;
+    top: calc(100vh/2.4);
+    left: calc(100vw/7);
     border-radius: 60%;
     background-color: rgba(0, 214, 252, 0.314);
     font-family: "metal_mania";
@@ -62,24 +62,67 @@ nav {
 #photo {
     position: absolute;
     height: 600px;
-    right: 200px;
-    top: 200px;
+    right: calc(100vw/17);
+    top: calc(100vh/6);
     border-radius: 50%;
 }
 
 #switchButton {
     position: absolute;
-    bottom: 100px;
-    left: 48%;
+    bottom: calc(100vh/16);
+    left: calc(100vw/2);
     height: 80px;
     width: 160px;
     border-radius: 20px;
     font-size: 1.4rem;
-    background-color: rgba(255, 255, 255, 0.406);
-    perspective: 23rem;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
     box-shadow: 10px -10px rgba(0, 0, 0, 0.911);
 }
 
 .switchLights {
     background-image: url(./Image/image\ de\ fond\ dark.jpg);
+}
+
+@media only screen and (max-width: 390px) {
+    body {
+        background-image: none;
+        background-color: rgb(6, 147, 235);
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        top: 10px;
+        right: 0;
+    }
+    
+    #photo {
+        height: auto;
+        width: 250px;
+        right: auto;
+        top: 150px;
+        left: 30px;
+    }
+
+    .aboutMe {
+        width: 230px;
+        height: auto;
+        font-size: 1.7rem;
+        top: 400px;
+        left: 130px;
+    }
+
+    #switchButton {
+        position: fixed;
+        left: 30%;
+        bottom: 40px;
+    }
+
+    .switchLights {
+        background-image: none;
+        background-color: rgb(7, 61, 95);
+    }
 }
