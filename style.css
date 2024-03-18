@@ -15,6 +15,26 @@ body {
     background-size: cover;
 }
 
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 150px;
+    right: 250px;
+    top: 50px;
+}
+
+#logoLinkedin {
+    height: 50px;
+    width: auto;
+}
+
+#logoGithub {
+    height: 50px;
+    width: auto;
+}
+
 .aboutMe {
     position: absolute;
     top: 500px;
@@ -55,7 +75,7 @@ body {
     width: 160px;
     border-radius: 20px;
     font-size: 1.4rem;
-    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.406);
     perspective: 23rem;
     box-shadow: 10px -10px rgba(0, 0, 0, 0.911);
 }
